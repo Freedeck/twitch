@@ -7,4 +7,5 @@ tmp
 YTMD.src 
 ## I'm cooking. Don't worry about it.
 
+*.src
 plugins/*
