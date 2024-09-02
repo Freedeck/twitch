@@ -1,3 +1,3 @@
 module.exports = {
-	entrypoint: 'ExampleJSHook.js'
+	entrypoint: 'MFP.js'
 }
