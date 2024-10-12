@@ -14,7 +14,7 @@ function updateViewerCount() {
   document.querySelectorAll(".button").forEach((button) => {
     if(!button.getAttribute("data-interaction")) return;
     const inter = JSON.parse(button.getAttribute("data-interaction"));
-    if(inter.type !== "t.vc" || inter.type !== "t.vcn") return;
+    if(!inter.type.includes("t.v")) return;
     getViewerCount(inter.data.streamer).then((vc) => {
       if(inter.type === "t.vc") button.innerText = inter.data.streamer+": " +vc;
       else button.innerText = vc;

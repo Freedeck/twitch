@@ -4,7 +4,7 @@ const Plugin = require(path.resolve("./src/classes/Plugin"));
 class Twitch extends Plugin {
 	constructor() {
 		super("Twitch", "Freedeck", "Twitch", false);
-		this.version = "1.2.0";
+		this.version = "1.1.0";
 	}
 	onInitialize() {
 		console.log("Initialized Twitch plugin");
